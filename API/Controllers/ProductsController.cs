@@ -1,10 +1,8 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using Core.Interfaces;
 using Core.Models;
-using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
@@ -14,29 +12,38 @@ namespace API.Controllers
     public class ProductsController : Controller
     {
         private readonly ILogger<ProductsController> _logger;
-        private readonly StoreContext _context;
+        private readonly IProductRepository _repository;
 
-        public ProductsController(ILogger<ProductsController> logger,
-            StoreContext context)
+        public ProductsController(ILogger<ProductsController> logger, IProductRepository repository)
         {
-            _context = context;
             _logger = logger;
+            _repository = repository;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            var products = await _context.Products.ToListAsync();
 
-            return Ok(products);
+            return Ok(await _repository.GetProductsListAsync());
         }
         
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            return await _context.Products.FindAsync(id);
+            return await _repository.GetProductByIdAsync(id);
         }
 
+        [HttpGet("brands")]
+        public async Task<ActionResult<List<ProductBrand>>> GetProductBrands()
+        {
+            return Ok(await _repository.GetProductBrandsListAsync());
+        }
+
+        [HttpGet("types")]
+        public async Task<ActionResult<List<ProductType>>> GetProductTypes()
+        {
+            return Ok(await _repository.GetProductTypesListAsync());
+        }
         public IActionResult Index()
         {
             return View();
