@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\angular-learning\\skinet\\API\\API.csproj": {}
+    "C:\\Projects\\web-shop\\api\\API.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\angular-learning\\skinet\\API\\API.csproj": {
+    "C:\\Projects\\web-shop\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\angular-learning\\skinet\\API\\API.csproj",
+        "projectUniqueName": "C:\\Projects\\web-shop\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "E:\\Projects\\angular-learning\\skinet\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Londeroner\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\angular-learning\\skinet\\API\\obj\\",
+        "projectPath": "C:\\Projects\\web-shop\\api\\API.csproj",
+        "packagesPath": "C:\\Users\\Filin\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\web-shop\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Londeroner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Filin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Projects\\angular-learning\\skinet\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "E:\\Projects\\angular-learning\\skinet\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Projects\\web-shop\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Projects\\web-shop\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -48,6 +48,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.4, )"
@@ -85,20 +89,20 @@
         }
       }
     },
-    "E:\\Projects\\angular-learning\\skinet\\Core\\Core.csproj": {
+    "C:\\Projects\\web-shop\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\angular-learning\\skinet\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Projects\\web-shop\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "E:\\Projects\\angular-learning\\skinet\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Londeroner\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\angular-learning\\skinet\\Core\\obj\\",
+        "projectPath": "C:\\Projects\\web-shop\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Filin\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\web-shop\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Londeroner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Filin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -143,20 +147,20 @@
         }
       }
     },
-    "E:\\Projects\\angular-learning\\skinet\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Projects\\web-shop\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\angular-learning\\skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projects\\web-shop\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "E:\\Projects\\angular-learning\\skinet\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Londeroner\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\angular-learning\\skinet\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Projects\\web-shop\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Filin\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\web-shop\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Londeroner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Filin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -171,8 +175,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Projects\\angular-learning\\skinet\\Core\\Core.csproj": {
-                "projectPath": "E:\\Projects\\angular-learning\\skinet\\Core\\Core.csproj"
+              "C:\\Projects\\web-shop\\Core\\Core.csproj": {
+                "projectPath": "C:\\Projects\\web-shop\\Core\\Core.csproj"
               }
             }
           }
