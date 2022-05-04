@@ -125,3 +125,14 @@ C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.Open
 C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Projects\web-shop\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Projects\web-shop\api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\API.staticwebassets.runtime.json
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\AutoMapper.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Projects\angular-learning\skinet\api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
