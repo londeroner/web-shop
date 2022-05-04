@@ -116,3 +116,12 @@ E:\Projects\angular-learning\skinet\API\bin\Debug\net6.0\Infrastructure.pdb
 E:\Projects\angular-learning\skinet\API\bin\Debug\net6.0\Core.pdb
 C:\Projects\web-shop\api\bin\Debug\net6.0\AutoMapper.dll
 C:\Projects\web-shop\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\web-shop\api\bin\Debug\net6.0\API.staticwebassets.runtime.json
+C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projects\web-shop\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Projects\web-shop\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Projects\web-shop\api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
