@@ -26,4 +26,4 @@ Windows 10
 	9. Click “Next”
 	10. Click “Finish”
 
-If you get a prompt, click “Yes”
+If you get a p 
