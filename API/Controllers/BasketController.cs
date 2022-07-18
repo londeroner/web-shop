@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using API.DTO;
+using AutoMapper;
 using Core.Interfaces;
 using Core.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -14,12 +16,14 @@ namespace API.Controllers
     {
         private readonly ILogger<BasketController> _logger;
         private readonly IBasketRepository _basketRepository;
+        private readonly IMapper _mapper;
 
         public BasketController(ILogger<BasketController> logger, 
-            IBasketRepository basketRepository)
+            IBasketRepository basketRepository, IMapper mapper)
         {
             _logger = logger;
             _basketRepository = basketRepository;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -31,9 +35,9 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasket basket)
+        public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasketDTO basket)
         {
-            var updatedBasket = await _basketRepository.UpdateBasketAsync(basket);
+            var updatedBasket = await _basketRepository.UpdateBasketAsync(_mapper.Map<CustomerBasketDTO, CustomerBasket>(basket));
 
             return Ok(updatedBasket);
         }
