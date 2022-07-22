@@ -29,6 +29,14 @@ namespace Infrastructure.Identity
                     }
                 };
 
+                user.Tags = new List<UserTag>() {
+                    new UserTag {
+                        AppUser = user,
+                        AppUserId = user.Id,
+                        CanCheckErrors = true
+                    }
+                };
+
                 await userManager.CreateAsync(user, "Pa$$w0rd");
             }
         }
