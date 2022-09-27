@@ -10,6 +10,5 @@ namespace Core.Models.Identity
     {
         public string DisplayName { get; set; }
         public Address Address { get; set; }
-        public List<UserTag> Tags { get; set; } = new List<UserTag>();
     }
 }

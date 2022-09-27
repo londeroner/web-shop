@@ -120,26 +120,6 @@ namespace Infrastructure.Identity.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Core.Models.Identity.UserTag", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("AppUserId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("CanCheckErrors")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
-
-                    b.ToTable("UserTag");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -279,17 +259,6 @@ namespace Infrastructure.Identity.Migrations
                     b.Navigation("AppUser");
                 });
 
-            modelBuilder.Entity("Core.Models.Identity.UserTag", b =>
-                {
-                    b.HasOne("Core.Models.Identity.AppUser", "AppUser")
-                        .WithMany("Tags")
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AppUser");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -344,8 +313,6 @@ namespace Infrastructure.Identity.Migrations
             modelBuilder.Entity("Core.Models.Identity.AppUser", b =>
                 {
                     b.Navigation("Address");
-
-                    b.Navigation("Tags");
                 });
 #pragma warning restore 612, 618
         }

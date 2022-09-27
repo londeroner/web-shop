@@ -180,26 +180,6 @@ namespace Infrastructure.Identity.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "UserTag",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    CanCheckErrors = table.Column<bool>(type: "INTEGER", nullable: false),
-                    AppUserId = table.Column<string>(type: "TEXT", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserTag", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_UserTag_AspNetUsers_AppUserId",
-                        column: x => x.AppUserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Address_AppUserId",
                 table: "Address",
@@ -242,11 +222,6 @@ namespace Infrastructure.Identity.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserTag_AppUserId",
-                table: "UserTag",
-                column: "AppUserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -268,9 +243,6 @@ namespace Infrastructure.Identity.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-
-            migrationBuilder.DropTable(
-                name: "UserTag");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
