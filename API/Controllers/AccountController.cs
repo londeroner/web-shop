@@ -49,6 +49,15 @@ namespace API.Controllers
             };
         }
 
+        [HttpGet("userpolicy")]
+        [Authorize]
+        public async Task<ActionResult<PoliciesDTO>> GetCurrentUserPolicies()
+        {
+            var user = await _userManager.GetUserWithPoliciesByEmailAsync(User);
+
+            return user.Tags.ConvertTagsToPolicies();
+        }
+
         [HttpGet("emailexists")]
         public async Task<ActionResult<bool>> CheckEmailExistsAsync([FromQuery] string email)
         {

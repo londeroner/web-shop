@@ -14,6 +14,7 @@ export class TestErrorComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    console.log("test-error");
   }
 
   get404Error() {
