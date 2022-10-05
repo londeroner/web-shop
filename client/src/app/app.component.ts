@@ -15,7 +15,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.loadBasket();
     this.loadCurrentUser();
-    this.loadCurrentPolicy();
   }
 
   loadBasket() {
@@ -34,15 +33,6 @@ export class AppComponent implements OnInit {
     console.log(token);
     this.accountService.loadCurrentUser(token).subscribe(() => {
       console.log('loaded user');
-    }, error => {
-      console.log(error);
-    });
-  }
-
-  loadCurrentPolicy() {
-    const token = localStorage.getItem('token');
-    this.accountService.getUserPolicy(token).subscribe(() => {
-      console.log('loaded policy');
     }, error => {
       console.log(error);
     });

@@ -17,7 +17,6 @@ namespace Infrastructure.Data
             _context = context;
         }
 
-
         public async Task<Product> GetProductByIdAsync(int id)
         {
             return await _context.Products
