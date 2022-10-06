@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EDE7eeLUw9n4tebrKIcgWTa1ESxewYSm0V4zb62eGsCHKyXnPjPwyCbQlybS6h3iJZU8G/vIutEq+p38j9VlhA==",
+  "dgSpecHash": "4W4+A0WfDsWc2x6MlXn+XbRs57CLUJzgEfFeMZsOz5dhdRYE4a/BjLPkzAnLYNZDCSAiLU8c+CMHNDRAqLaPIg==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\angular-learning\\skinet\\API\\API.csproj",
+  "projectFilePath": "E:\\Projects\\angular-learning\\skinet\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Londeroner\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Londeroner\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
