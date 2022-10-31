@@ -31,7 +31,7 @@ namespace Core.Models.OrderAggregate
 
         public decimal GetTotal()
         {
-            return Subtotal + DeliveryMethod.Price;
+            return DeliveryMethod is not null ? Subtotal + DeliveryMethod.Price : Subtotal;
         }
     }
 }
